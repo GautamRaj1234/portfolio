@@ -22,8 +22,3 @@ I am passionate about Python, Machine Learning, and building real-world applicat
 - HTML5
 - CSS3
 - GitHub Pages
-
----
-
-## 📂 Project Structure
-
