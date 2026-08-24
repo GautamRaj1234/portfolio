@@ -1,70 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gautam Raj | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gautam Raj — AI/ML &amp; Full-Stack Engineer</title>
+<meta name="description" content="Gautam Raj — Final-year B.Tech CSE (AI) engineer who ships production software: SmartHire, PlantSathi AI, and an NLP resume screener, all live and open-source.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Gautam Raj</h1>
-        <p>B.Tech CSE (AI) | Python & AI Enthusiast</p>
-    </header>
+<div class="grain"></div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Science student specializing in Artificial Intelligence.
-            I am passionate about Python, Machine Learning, and building real-world applications.
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-brand">gautam<span class="dot">.</span>raj</a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+    <a href="Gautam_Raj_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">résumé <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow reveal">gautam raj — final-year b.tech cse (ai)</p>
+
+    <h1 class="hero-title reveal">
+      I build AI products —<br>
+      and keep them <span class="accent">running</span> in production<span class="cursor">_</span>
+    </h1>
+
+    <p class="hero-sub reveal">
+      Full-stack engineer shipping RAG-powered SaaS, multi-API AI platforms, and NLP
+      systems from first commit to live deploy — then fixing what breaks along the way.
+    </p>
+
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="Gautam_Raj_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download résumé</a>
+    </div>
+
+    <div class="status-strip reveal">
+      <div class="status-row">
+        <span class="dot dot-live"></span>
+        <span class="status-name">smarthire</span>
+        <span class="status-url">frontend-olive-one-16.vercel.app</span>
+        <span class="status-tag tag-live">live</span>
+      </div>
+      <div class="status-row">
+        <span class="dot dot-live"></span>
+        <span class="status-name">ai-resume-screening</span>
+        <span class="status-url">ai-resume-screening-4z58.onrender.com</span>
+        <span class="status-tag tag-live">live</span>
+      </div>
+      <div class="status-row">
+        <span class="dot dot-build"></span>
+        <span class="status-name">plantsathi-ai</span>
+        <span class="status-url">github.com/GautamRaj1234/plantsathi-ai</span>
+        <span class="status-tag tag-build">building</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <p class="eyebrow reveal">~/about</p>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm a final-year B.Tech CSE (AI) student who'd rather ship something real than
+        just study it. I designed and deployed <strong>SmartHire</strong>, a RAG-based
+        resume-matching platform running live on Render and Vercel, and
+        <strong>PlantSathi AI</strong>, a plant-health app that chains four different
+        external APIs — vision, LLM, and weather — into one product. Along the way
+        I've debugged the production issues most tutorials skip: CORS failures,
+        out-of-memory crashes on free-tier hosting, a breaking API deprecation mid-build
+        — and fixed all of them myself.
+      </p>
+      <div class="about-facts reveal">
+        <div class="fact">
+          <span class="fact-num">3</span>
+          <span class="fact-label">shipped projects</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">2</span>
+          <span class="fact-label">internships completed</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">8</span>
+          <span class="fact-label">Cisco certifications</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">8.16</span>
+          <span class="fact-label">CGPA · CSE (AI)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <p class="eyebrow reveal">~/skills</p>
+    <h2 class="section-title reveal">What I build with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <p class="skill-key">languages</p>
+        <div class="skill-chips">
+          <span>Python</span><span>JavaScript</span><span>C</span><span>C++</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <p class="skill-key">ai / ml / nlp</p>
+        <div class="skill-chips">
+          <span>RAG</span><span>LLM APIs (Gemini, Groq)</span><span>Vector Search</span><span>TF-IDF</span><span>Cosine Similarity</span><span>scikit-learn</span><span>NLTK</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <p class="skill-key">backend</p>
+        <div class="skill-chips">
+          <span>FastAPI</span><span>Flask</span><span>Node.js / Express</span><span>REST APIs</span><span>JWT Auth</span><span>SQLAlchemy</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <p class="skill-key">frontend</p>
+        <div class="skill-chips">
+          <span>React.js</span><span>Vite</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <p class="skill-key">data &amp; vectors</p>
+        <div class="skill-chips">
+          <span>ChromaDB</span><span>FAISS</span><span>PostgreSQL</span><span>SQLite</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <p class="skill-key">devops &amp; tools</p>
+        <div class="skill-chips">
+          <span>Docker</span><span>GitHub Actions</span><span>Render</span><span>Vercel</span><span>Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <p class="eyebrow reveal">~/experience</p>
+    <h2 class="section-title reveal">Where I've worked</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Full Stack Web Development Intern</h3>
+            <span class="timeline-date">Mar 2026 – May 2026</span>
+          </div>
+          <p class="timeline-org">Soft Nexis Technology</p>
+          <ul>
+            <li>Contributed to front-end and back-end features using HTML, CSS, JavaScript, and modern web frameworks, applying Agile workflows throughout.</li>
+            <li>Demonstrated strong coordination and attention to detail across team collaborations, delivering quality work across multiple project features.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Front-End Web Developer Intern</h3>
+            <span class="timeline-date">Aug 2025 – Oct 2025</span>
+          </div>
+          <p class="timeline-org">Edunet Foundation (IBM SkillsBuild)</p>
+          <ul>
+            <li>Built 5+ responsive web interfaces using HTML, CSS, and JavaScript, improving accessibility and cross-browser consistency.</li>
+            <li>Integrated 2 third-party REST APIs to enable real-time dynamic content rendering across pages.</li>
+            <li>Contributed to 4 feature releases over 8-week Agile sprints, gaining practical exposure to React.js for component-based UI work.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <p class="eyebrow reveal">~/projects</p>
+    <h2 class="section-title reveal">Things I've shipped</h2>
+
+    <!-- Flagship -->
+    <article class="project-flagship reveal">
+      <div class="project-flagship-main">
+        <div class="project-tag-row">
+          <span class="status-tag tag-live"><span class="dot dot-live"></span> live</span>
+          <span class="flagship-label">flagship project</span>
+        </div>
+        <h3>SmartHire</h3>
+        <p class="project-desc">
+          A full-stack RAG-based resume-screening SaaS. Recruiters upload a resume
+          pool, post a job once, and get every candidate ranked by a hybrid of
+          semantic similarity (Gemini embeddings + ChromaDB vector search) and
+          keyword ATS scoring — with AI-generated skill-gap analysis and interview
+          questions attached to every result.
         </p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul class="skills">
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Flask</li>
-            <li>NLP</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Git & GitHub</li>
+        <ul class="project-points">
+          <li>Architected and independently shipped the full stack — FastAPI backend, React frontend — deployed live on Render and Vercel with CI/CD via GitHub Actions.</li>
+          <li>Built role-based access control (recruiter vs. candidate) with JWT auth, enforcing per-user data isolation across every endpoint.</li>
+          <li>Diagnosed and resolved real production failures: CORS misconfiguration, an out-of-memory crash on free-tier hosting, and a breaking third-party model deprecation.</li>
         </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>AI Resume Screening System</h3>
-            <p>
-                An AI-based system that analyzes resumes, extracts skills,
-                performs job matching using NLP, and recommends the best job role.
-            </p>
-            <a href="#">GitHub Repo (Add later)</a>
+      </div>
+      <div class="project-flagship-side">
+        <p class="skill-key">stack</p>
+        <div class="skill-chips chips-small">
+          <span>FastAPI</span><span>React</span><span>ChromaDB</span><span>Gemini API</span><span>Docker</span><span>JWT</span>
         </div>
-
-        <div class="project">
-            <h3>Calculator App</h3>
-            <p>
-                A simple calculator built using HTML, CSS, and JavaScript.
-            </p>
-            <a href="#">GitHub Repo (Add later)</a>
+        <div class="project-links">
+          <a href="https://frontend-olive-one-16.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/GautamRaj1234/smarthire" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub <i class="fa-brands fa-github"></i></a>
         </div>
+      </div>
+    </article>
 
-        <div class="project">
-            <h3>Weather App</h3>
-            <p>
-                A weather forecasting app using public API and JavaScript.
-            </p>
-            <a href="#">GitHub Repo (Add later)</a>
+    <!-- Secondary grid -->
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-tag-row">
+          <span class="status-tag tag-build"><span class="dot dot-build"></span> building</span>
         </div>
+        <h3>PlantSathi AI</h3>
+        <p class="project-desc">
+          A plant-health platform: identify a species, detect leaf disease, get
+          weather-aware care tips, and chat with an AI plant doctor for follow-up
+          advice — every scan private to your account.
+        </p>
+        <p class="project-stack-line">PlantNet API · Hugging Face vision model · Groq (Llama 3.1) · OpenWeatherMap · Node.js/Express · JWT</p>
+        <div class="project-links">
+          <a href="https://github.com/GautamRaj1234/plantsathi-ai" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub <i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
 
-    </section>
+      <article class="project-card reveal">
+        <div class="project-tag-row">
+          <span class="status-tag tag-live"><span class="dot dot-live"></span> live</span>
+        </div>
+        <h3>AI Resume Screening System</h3>
+        <p class="project-desc">
+          An NLP-based resume screener: parses PDF/DOCX resumes, extracts skills,
+          and scores them against a job description with TF-IDF and cosine
+          similarity, recommending the best-fit role.
+        </p>
+        <p class="project-stack-line">Python · Flask · scikit-learn · NLTK</p>
+        <div class="project-links">
+          <a href="https://ai-resume-screening-4z58.onrender.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/GautamRaj1234/AI-Resume-screening" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub <i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
 
-    <footer>
-        <p>GitHub: <a href="https://github.com/your-username">your-username</a></p>
-    </footer>
+    </div>
+  </section>
 
+  <!-- ============ EDUCATION / CREDENTIALS ============ -->
+  <section class="section" id="credentials">
+    <p class="eyebrow reveal">~/credentials</p>
+    <div class="credentials-grid">
+      <div class="reveal">
+        <p class="skill-key">education</p>
+        <h3 class="cred-title">B.Tech — Computer Science Engineering (AI)</h3>
+        <p class="cred-sub">Motihari College of Engineering, Motihari, Bihar &nbsp;·&nbsp; 2023–2027 (Expected) &nbsp;·&nbsp; CGPA 8.16</p>
+      </div>
+      <div class="reveal">
+        <p class="skill-key">certifications</p>
+        <div class="skill-chips chips-small">
+          <span>IBM SkillsBuild — Front End Web Dev</span>
+          <span>Cisco CCNA 1–3</span>
+          <span>Cisco Python Essentials 1 &amp; 2</span>
+          <span>Cisco Intro to Data Science</span>
+          <span>Cisco Intro to Modern AI</span>
+          <span>Quantum Programming (MeitY/IITs)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="footer" id="contact">
+  <p class="eyebrow reveal">~/contact</p>
+  <h2 class="footer-title reveal">Let's build something.</h2>
+  <p class="footer-sub reveal">Open to part-time remote roles in AI/ML or full-stack development.</p>
+
+  <div class="footer-links reveal">
+    <a href="mailto:gp832008@gmail.com"><i class="fa-solid fa-envelope"></i> gp832008@gmail.com</a>
+    <a href="https://github.com/GautamRaj1234" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> github.com/GautamRaj1234</a>
+    <a href="https://linkedin.com/in/gautam-raj-039204294" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/gautam-raj</a>
+  </div>
+
+  <p class="footer-fine">Built by Gautam Raj &mdash; designed and coded from scratch.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
